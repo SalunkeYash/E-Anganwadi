@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.aahaarapp">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Required to write to external storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- Required to write to internal storage -->
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AAHAARAPP"
+        tools:ignore="AllowBackup">
+
+        <activity android:name=".About" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBtAubRGSlTZanGLTPT3JrKWsRCFAXZzrE" />
+
+        <activity android:name=".Signup" />
+        <activity android:name=".Logup" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".landingpage" />
+        <activity android:name=".Issue" />
+        <activity android:name=".ForgotIssue" />
+        <activity android:name=".Pregnant_add"/>
+        <activity android:name=".Preganent_Nutrition" />
+        <activity android:name=".Preganent_Register"/>
+        <activity android:name=".Children0M6MAdd"/>
+        <activity android:name=".Children0M6MNutrition"/>
+        <activity android:name=".LactatingMother_register"/>
+        <activity android:name=".Children3Y6YAdd"/>
+        <activity android:name=".Children3Y6YRegister"/>
+        <activity android:name=".Children3Y6YNutrition"/>
+        <activity android:name=".Children6M3YAdd"/>
+        <activity android:name=".Children6M3YNutrition"/>
+        <activity android:name=".Children6m3YRegister"/>
+        <activity android:name=".LactatingMother_add"/>
+        <activity android:name=".LactatingMother_Nutrition"/>
+        <activity android:name=".AdolescentGirlsAdd"/>
+        <activity android:name=".AdolescentGirlsRegister"/>
+        <activity android:name=".AdolescentGirlsNutrition"/>
+        <activity android:name=".AdolescentBoysAdd"/>
+        <activity android:name=".AdolescentBoysRegister"/>
+        <activity android:name=".AdolescentBoysNutrition"/>
+        <activity android:name=".List1"/>
+        <activity android:name=".Pregnant_view"/>
+
+
+
+        <activity
+
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <receiver android:name=".LactatingMother_add"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ACTION_CALL_FUNCTION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+
+</manifest>

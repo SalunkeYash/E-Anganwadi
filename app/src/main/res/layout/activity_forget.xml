@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ForgotIssue"
+    >
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="Forget MPIN\n"
+        android:textAlignment="center"
+        android:textColor="#D12121"
+        android:textColorHighlight="@color/black"
+        android:textSize="35dp"
+
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Mobile Number"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/mobile2"
+        android:layout_width="311dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30px"
+        android:background="@drawable/bordered_edittext"
+        android:gravity="center|center_horizontal"
+        android:hint="  91 + Enter the mobile Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textAlignment="center"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:inputType="number"
+        android:text="Enter New MPIN"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/mpin3"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bordered_edittext"
+        android:gravity="center|center_horizontal"
+        android:hint="Enter New Password"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="233dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50px"
+        android:backgroundTint="#D12121"
+        android:text="Set Mpin"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        app:cornerRadius="32dp" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:text="\nAlready have an account? Login\n\n\n\n\n\n\"
+        android:gravity="center"
+        android:textColorLink="#D12121"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

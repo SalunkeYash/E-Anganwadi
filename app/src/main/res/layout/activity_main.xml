@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opensans"
+                android:text="Welcome to"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/opensans"
+                android:text="POSHAN Tracker"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Pregnant"
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/whiteish"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/pregnant" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="130dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="PREGNANT WOMEN"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Lactating"
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/whiteish"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/lactating" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="130dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="LACTATING MOTHERS"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Children_0_6"
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/whiteish"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/child6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="125dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="CHILDREN"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="145dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="0 months-6 months"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        tools:ignore="TextSizeCheck" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Children_6_3"
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/whiteish"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    tools:ignore="KeyboardInaccessibleWidget">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/child3y" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="125dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="CHILDREN"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="145dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="6 months-3 years"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        tools:ignore="TextSizeCheck" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Children_3_6"
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/whiteish"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/child6y" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="125dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="CHILDREN"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="145dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="3 years-6 years"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        tools:ignore="TextSizeCheck" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Adolescent_Girls"
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/whiteish"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/adolescent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="130dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="ADOLESCENT GIRLS"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Adolescent_Boys"
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/whiteish"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/adolescentboy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="130dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="ADOLESCENT BOYS"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Logout"
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/whiteish"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/daily" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="130dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="DAILY TRACKING"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30px"
+        app:menu="@menu/bottom_navigation" />
+
+</LinearLayout>
